@@ -1,0 +1,35 @@
+{
+  "name": "joi-extension-string-validFromRefs",
+  "version": "1.0.0",
+  "description": "Adds within validation to enable you to validate string value from composing different joi references",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run jshint && mocha test/*_test.js",
+    "jshint": "jshint *.js test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:B2MSolutions/joi-extension-string-validFromRefs.git"
+  },
+  "keywords": [
+    "joi",
+    "validation",
+    "extension",
+    "string",
+    "refs",
+    "references",
+    "joining"
+  ],
+  "author": "Youhana Hana <meyouhana@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hoek": "4.1.0",
+    "joi": "10.0.6",
+    "lodash": "4.17.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jshint": "^2.9.3",
+    "mocha": "^3.2.0"
+  }
+}
