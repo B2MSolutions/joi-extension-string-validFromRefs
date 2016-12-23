@@ -9,7 +9,7 @@ var Joi = require('joi').extend(require('joi-extension-string-valid-from-refs'))
 var schema = Joi.object({
   firstName: Joi.string().required(),
   lastName: Joi.string().required(),
-  fullName: Joi.string().required().validFromRefs(['lastName', 'firstName'], ',')
+  fullName: Joi.string().required().validFromRefs(['lastName', 'firstName'], ', ')
 });
 
 var input = {
