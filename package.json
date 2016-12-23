@@ -1,6 +1,6 @@
 {
   "name": "joi-extension-string-valid-from-refs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds within validation to enable you to validate string value from composing different joi references",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "license": "MIT",
   "dependencies": {
     "hoek": "4.1.0",
-    "joi": "10.0.6",
+    "joi": "9.0.4",
     "lodash": "4.17.2"
   },
   "devDependencies": {

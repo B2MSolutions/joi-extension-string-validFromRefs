@@ -37,4 +37,22 @@ describe('validFromRefs', function(done) {
       done();
     });
   });
+
+  it('should be good', function(done) {
+    const value = {
+      firstName:'John',
+      lastName:'Smith',
+      fullName:'Smith, John'
+    };
+    const schema = {
+      firstName: joi.string().required(),
+      lastName: joi.string().required(),
+      fullName: joi.string().required().validFromRefs(['lastName', 'firstName'], ', ')
+    };
+
+    joi.validate(value, schema, function(err, value) {
+      expect(err).to.not.exist;
+      done(err);
+    });
+  });
 });
