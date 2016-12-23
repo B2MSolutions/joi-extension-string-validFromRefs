@@ -1,5 +1,5 @@
 {
-  "name": "joi-extension-string-validFromRefs",
+  "name": "joi-extension-string-valid-from-refs",
   "version": "1.0.0",
   "description": "Adds within validation to enable you to validate string value from composing different joi references",
   "main": "index.js",
